@@ -79,8 +79,8 @@ Ejemplo:
 
 **POST** -> /topsecret_split/{nombre_satelite}
 
-Se espera como parametro alguno de los satelites configurados
-de lo contrario retornara un error
+Se espera como parametro alguno de los satelites configurados de lo contrario retornara un error. Al cargar mas de una vez el mismo satelite la informacion sera reemplazada,
+pudiedo asi corregise algun error de carga. La iformacion de todos los satelites sera borrada una vez obtenido el mensaje mediante el recurso *GET*
 
 body: 
 ````json
