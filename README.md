@@ -15,14 +15,22 @@ body:
 Formato:
 
 ````json
-{satellites:[{"name":"","distance":,"message":[]}]]
+{
+  "satellites": [
+    {
+      "name": "",
+      "distance":"",
+      "message": []
+    }
+  ]
+}
 ````
 
 Ejemplo:  
   
 ```json
 {
-    satellites:[
+    "satellites" :[
         {"name":"kenobi",
         "distance":100.0,
         "message":["este","","","mensaje",""]
@@ -48,10 +56,10 @@ Formato:
 ````json
 {
     "position": {
-        "x": coordX,
-        "y": coordY
+        "x": "coordX",
+        "y": "coordY"
     },
-    "message": mensaje
+    "message": "mensaje"
 }
 ````
 
@@ -104,10 +112,10 @@ Formato:
 ````json
 {
     "position": {
-        "x": coordX,
-        "y": coordY
+        "x": "coordX",
+        "y": "coordY"
     },
-    "message": mensaje
+    "message": "mensaje"
 }
 ````
 
@@ -128,7 +136,7 @@ En caso de error la respuesta sera un codigo 404 con el siguente body:
 
 ````json
 {
-  "error": {mensaje_error},
+  "error": "mensaje_error",
   "status": "404"
 }
 ````
