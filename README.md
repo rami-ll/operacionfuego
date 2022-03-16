@@ -1,10 +1,10 @@
 Este proyecto expone un servicio rest con distintos recuros mediante un tomcat embebido provisto springboot framework.
 
-##Los recursos expuestos son:
+## Los recursos expuestos son:
 
 ---
 
-POST -> /topsecret
+**POST** -> /topsecret
 
 Espera dentro del body la informacion correspondiente a los satelites, estos deben estar configurados en el archivo application.properties como se detalla mas adelante.
 
@@ -77,7 +77,7 @@ Ejemplo:
 
 ---
 
-POST -> /topsecret_split/{nombre_satelite}
+**POST** -> /topsecret_split/{nombre_satelite}
 
 Se espera como parametro alguno de los satelites configurados
 de lo contrario retornara un error
@@ -97,7 +97,7 @@ No body
 
 ---
 
-GET -> /topsecret_split
+**GET** -> /topsecret_split
 
 La respuesta es igual a la del recurso topsecret. Para que este devuelva una respuesta correcta se debera haber cargado previamente mediante el recurso anterior la cantidad minima de satelites necesarios e informacion suficiente para descifrar el mensaje. Asi como en el otro recurso en caso de ser insuficiente retornara error indicando la causa.
 
@@ -143,7 +143,7 @@ En caso de error la respuesta sera un codigo 404 con el siguente body:
 
 ---
 
-##Informacion para ejecucion:
+## Informacion para ejecucion:
 
 Para levantar la aplicacion descargar el contenido del repositorio y ejecutar el comando sobre el root paht **mvn clean install**.
 
